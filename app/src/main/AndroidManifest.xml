@@ -23,7 +23,7 @@
 
         <!-- Main Activity -->
         <activity
-            android:name="com.choosemuse.example.libmuse.MainActivity"
+            android:name="com.choosemuse.example.libmuse.HomeActivity"
             android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
@@ -34,7 +34,7 @@
 
         <!-- Additional Activities -->
         <activity
-            android:name=".HomeActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Attentiva" />
         <activity

@@ -31,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
         Intent runsIntent = new Intent(HomeActivity.this, MuseRuns.class); //class where you are, then class where you wanan go
         switchActivityButton(runsButton, runsIntent);
 
-        Intent startMuseIntent = new Intent(HomeActivity.this, MuseActivity.class);
+        Intent startMuseIntent = new Intent(HomeActivity.this, MainActivity.class);
         switchStartActivityButton(startButton, startMuseIntent);
 
 
