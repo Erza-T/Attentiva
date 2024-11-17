@@ -23,7 +23,7 @@
 
         <!-- Main Activity -->
         <activity
-            android:name="com.choosemuse.example.libmuse.HomeActivity"
+            android:name="com.choosemuse.example.attentiva.HomeActivity"
             android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
@@ -38,13 +38,10 @@
             android:exported="true"
             android:theme="@style/Theme.Attentiva" />
         <activity
-            android:name=".MuseActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Attentiva" />
-        <activity
             android:name=".MuseRuns"
             android:exported="true"
             android:theme="@style/Theme.Attentiva" />
+
 
         <!-- Preloaded Fonts -->
         <meta-data

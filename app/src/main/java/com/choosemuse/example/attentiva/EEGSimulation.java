@@ -1,4 +1,4 @@
-package com.choosemuse.example.libmuse;
+package com.choosemuse.example.attentiva;
 
 import com.choosemuse.libmuse.*;
 

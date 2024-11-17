@@ -1,7 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+	android:background="#000000">
 
     <Spinner
 	    android:id="@+id/muses_spinner"
@@ -15,37 +16,54 @@
             android:id="@+id/refresh"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:text="@string/refresh" />
+            android:text="@string/refresh"
+			android:textColor="@android:color/black"
+			android:backgroundTint="@android:color/white"
+			/>
 	    <Button
 	        android:id="@+id/connect"
 	        android:layout_width="100dp"
 	        android:layout_height="40dp"
-	        android:text="@string/connect" />
+	        android:text="@string/connect"
+			android:textColor="@android:color/black"
+			android:backgroundTint="@android:color/white"
+
+			/>
 	    <Button
 	        android:id="@+id/disconnect"
 	        android:layout_width="120dp"
 	        android:layout_height="40dp"
-	        android:text="@string/disconnect" />
+	        android:text="@string/disconnect"
+			android:textColor="@android:color/black"
+			android:backgroundTint="@android:color/white"
+
+			/>
 	</LinearLayout>
 	<TextView
    		android:layout_width="match_parent"
     	android:layout_height="match_parent"
     	android:layout_weight="1"
     	android:textSize="16sp"
-    	android:text="@string/status" />
+    	android:text="@string/status"
+		android:textColor="@android:color/white"
+		/>
   	<TextView
     	android:id="@+id/con_status"
    		android:layout_width="match_parent"
     	android:layout_height="match_parent"
     	android:layout_weight="1"
     	android:textSize="16sp"
-    	android:text="@string/undefined" />
+    	android:text="@string/undefined"
+		android:textColor="@android:color/white"
+		/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:textSize="16sp"
-        android:text="@string/eeg" />
+        android:text="@string/eeg"
+		android:textColor="@android:color/white"
+		/>
 	<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -57,35 +75,45 @@
 	        android:layout_height="match_parent"
 	        android:layout_weight="1"
 	        android:textSize="16sp"
-	        android:text="@string/init_val" />
+	        android:text="@string/init_val"
+			android:textColor="@android:color/white"
+			/>
         <TextView
             android:id="@+id/eeg_af7"
 	        android:layout_width="match_parent"
 	        android:layout_height="match_parent"
 	        android:layout_weight="1"
 	        android:textSize="16sp"
-	        android:text="@string/init_val" />
+	        android:text="@string/init_val"
+			android:textColor="@android:color/white"
+			/>
         <TextView
             android:id="@+id/eeg_af8"
 	        android:layout_width="match_parent"
 	        android:layout_height="match_parent"
 	        android:layout_weight="1"
 	        android:textSize="16sp"
-	        android:text="@string/init_val" />
+	        android:text="@string/init_val"
+			android:textColor="@android:color/white"
+			/>
         <TextView
             android:id="@+id/eeg_tp10"
 	        android:layout_width="match_parent"
 	        android:layout_height="match_parent"
 	        android:layout_weight="1"
 	        android:textSize="16sp"
-	        android:text="@string/init_val" />
+	        android:text="@string/init_val"
+			android:textColor="@android:color/white"
+			/>
     </LinearLayout>
-    <TextView
+<!--    <TextView
    		android:layout_width="match_parent"
     	android:layout_height="match_parent"
     	android:layout_weight="1"
     	android:textSize="16sp"
-    	android:text="@string/accel" />
+    	android:text="@string/accel"
+		android:textColor="@android:color/white"
+		/>
     	<LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="match_parent"
@@ -97,28 +125,36 @@
 		        android:layout_height="match_parent"
 		        android:layout_weight="1"
 		        android:textSize="16sp"
-		        android:text="@string/init_val" />
+		        android:text="@string/init_val"
+				android:textColor="@android:color/white"
+				/>
 	        <TextView
 	            android:id="@+id/acc_y"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
 		        android:layout_weight="1"
 		        android:textSize="16sp"
-		        android:text="@string/init_val" />
+		        android:text="@string/init_val"
+				android:textColor="@android:color/white"
+				/>
 	        <TextView
 	            android:id="@+id/acc_z"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
 		        android:layout_weight="1"
 		        android:textSize="16sp"
-		        android:text="@string/init_val" />
-   		 </LinearLayout>
-   		 <TextView
+		        android:text="@string/init_val"
+				android:textColor="@android:color/white"
+				/>
+   		 </LinearLayout>-->
+<!--   		 <TextView
 	   		android:layout_width="match_parent"
 	    	android:layout_height="match_parent"
 	    	android:layout_weight="1"
 	    	android:textSize="16sp"
-	    	android:text="@string/muse_elem" />
+	    	android:text="@string/muse_elem"
+			 android:textColor="@android:color/white"
+			 />
    		<LinearLayout
         	android:layout_width="match_parent"
         	android:layout_height="match_parent"
@@ -130,51 +166,85 @@
 		        android:layout_height="match_parent"
 		        android:layout_weight="1"
 		        android:textSize="16sp"
-		        android:text="@string/init_val" />
+		        android:text="@string/init_val"
+				android:textColor="@android:color/white"
+				/>
 	        <TextView
 	            android:id="@+id/elem2"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
 		        android:layout_weight="1"
 		        android:textSize="16sp"
-		        android:text="@string/init_val" />
+		        android:text="@string/init_val"
+				android:textColor="@android:color/white"
+				/>
 	        <TextView
 	            android:id="@+id/elem3"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
 		        android:layout_weight="1"
 		        android:textSize="16sp"
-		        android:text="@string/init_val" />
+		        android:text="@string/init_val"
+				android:textColor="@android:color/white"
+				/>
 	        <TextView
 	            android:id="@+id/elem4"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
 		        android:layout_weight="1"
 		        android:textSize="16sp"
-		        android:text="@string/init_val" />
-	    </LinearLayout>
+		        android:text="@string/init_val"
+				android:textColor="@android:color/white"
+				/>
+	    </LinearLayout>-->
    	    <TextView
 	   		android:layout_width="match_parent"
 	    	android:layout_height="match_parent"
 	    	android:layout_weight="1"
 	    	android:textSize="16sp"
-	    	android:text="@string/version" />
+	    	android:text="@string/version"
+			android:textColor="@android:color/white"
+			/>
    	    <TextView
    	        android:id="@+id/version"
 	   		android:layout_width="match_parent"
 	    	android:layout_height="match_parent"
 	    	android:layout_weight="1"
 	    	android:textSize="16sp"
-	    	android:text="@string/undefined" />
+	    	android:text="@string/undefined"
+			android:textColor="@android:color/white"
+			/>
 		<LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="45dp"
 	        android:orientation="horizontal" >
 	        <Button
 	            android:id="@+id/pause"
-	            android:layout_width="150dp"
+	            android:layout_width="120dp"
 	            android:layout_height="40dp"
-	            android:text="@string/pause" />
+	            android:text="@string/pause"
+				android:textColor="@android:color/black"
+				android:backgroundTint="@android:color/white"
+
+				/>
+			<Button
+				android:id="@+id/finish"
+				android:layout_width="120dp"
+				android:layout_height="40dp"
+				android:text="Finish"
+				android:textColor="@android:color/black"
+				android:backgroundTint="@android:color/white"
+
+				/>
+			<Button
+				android:id="@+id/home"
+				android:layout_width="120dp"
+				android:layout_height="40dp"
+				android:text="Home"
+				android:textColor="@android:color/black"
+				android:backgroundTint="@android:color/white"
+
+				/>
 		</LinearLayout>
 
 </LinearLayout>

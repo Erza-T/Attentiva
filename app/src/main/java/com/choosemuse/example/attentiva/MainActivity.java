@@ -3,7 +3,7 @@
  * Interaxon, Inc. 2016
  */
 
-package com.choosemuse.example.libmuse;
+package com.choosemuse.example.attentiva;
 
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
@@ -504,12 +504,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             if (eegStale) {
                 updateEeg();
             }
-            if (accelStale) {
+/*            if (accelStale) {
                 updateAccel();
-            }
-            if (alphaStale) {
+            }*/
+/*            if (alphaStale) {
                 updateAlpha();
-            }
+            }*/
             handler.postDelayed(tickUi, 1000 / 60);
         }
     };
@@ -518,14 +518,14 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
      * The following methods update the TextViews in the UI with the data
      * from the buffers.
      */
-    private void updateAccel() {
+/*    private void updateAccel() {
         TextView acc_x = findViewById(R.id.acc_x);
         TextView acc_y = findViewById(R.id.acc_y);
         TextView acc_z = findViewById(R.id.acc_z);
         acc_x.setText(String.format(Locale.getDefault(), "%6.2f", accelBuffer[0]));
         acc_y.setText(String.format(Locale.getDefault(), "%6.2f", accelBuffer[1]));
         acc_z.setText(String.format(Locale.getDefault(), "%6.2f", accelBuffer[2]));
-    }
+    }*/
 
     private void updateEeg() {
         TextView tp9 = findViewById(R.id.eeg_tp9);
@@ -538,7 +538,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         tp10.setText(String.format(Locale.getDefault(), "%6.2f", eegBuffer[3]));
     }
 
-    private void updateAlpha() {
+/*    private void updateAlpha() {
         TextView elem1 = findViewById(R.id.elem1);
         elem1.setText(String.format(Locale.getDefault(), "%6.2f", alphaBuffer[0]));
         TextView elem2 = findViewById(R.id.elem2);
@@ -547,7 +547,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         elem3.setText(String.format(Locale.getDefault(), "%6.2f", alphaBuffer[2]));
         TextView elem4 = findViewById(R.id.elem4);
         elem4.setText(String.format(Locale.getDefault(), "%6.2f", alphaBuffer[3]));
-    }
+    }*/
 
 
     //--------------------------------------

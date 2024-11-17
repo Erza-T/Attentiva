@@ -1,4 +1,4 @@
-package com.choosemuse.example.libmuse;
+package com.choosemuse.example.attentiva;
 
 import android.content.Intent;
 import android.os.Bundle;
